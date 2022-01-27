@@ -1,7 +1,7 @@
 
 <?php
 
-namespace Theslwaja\PlayerStatus;
+namespace Theslwaja/PlayerStatus;
 
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
