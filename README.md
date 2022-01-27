@@ -8,6 +8,10 @@ plugin to know player status
   # feature
   
   -player device
+  
   -player ping
+  
   -player name
+  
   player device model
+  
