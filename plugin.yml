@@ -1,0 +1,14 @@
+name: PlayerStatus
+main: Theslowaja\PlayerStatus\Main
+author: Theslowaja
+credits: ShandyR
+version: 1.0.0
+api: 4.0.0
+
+commands:
+  player:
+    permission: player.use
+    
+permissions:
+  player.use:
+    default: true
