@@ -23,7 +23,7 @@ class Main extends PluginBase{
             $controls = ["Unknown", "Mouse & Keyboard", "Touch", "Controller"];
             $player = Server::getInstance()->getPlayerByPrefix($name);
             if($player instanceof Player){
-                $sender->sendMessage(TextFormat::GRAY . "Player: " . $player->getName() . " : Device: " . $os[$player->getPlayerInfo()->getExtraData()["DeviceOS"] ?? 0] . " : Ping: " . $player->getNetworkSession()->getPing() . " : Control: " . $controls[$player->getPlayerInfo()->getExtraData()["CurrentInputMode"] ?? 0] . " : Device Model: " . $player->getPlayerInfo()->getExtraData()["DeviceModel"] ?? "Unknown");
+                $sender->sendMessage(TextFormat::GRAY . "Player: " . $player->getName() . " : Device: " . $os[$player->getPlayerInfo()->getExtraData()["DeviceOS"] ?? 0] . " : Ping: " . $player->getNetworkSession()->getPing() . " : Control: " . $controls[$player->getPlayerInfo()->getExtraData()["CurrentInputMode"] ?? 0] . " : Device Model: " . $player->getPlayerInfo()->getExtraData()["DeviceModel"]);
             } else {
                 $sender->sendMessage(TextFormat::RED . "Player not found!");
             }
