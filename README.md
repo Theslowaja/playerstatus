@@ -3,7 +3,7 @@ plugin to know player status
 
 # command
 
-/player <name>
+/player (name)
   
   # feature
   
