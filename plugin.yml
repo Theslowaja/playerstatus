@@ -2,7 +2,7 @@ name: PlayerStatus
 main: Theslwaja\PlayerStatus\Main
 author: Theslowaja
 credits: ShandyR
-version: 1.0.1
+version: 1.0
 api: 4.0.0
 
 commands:
