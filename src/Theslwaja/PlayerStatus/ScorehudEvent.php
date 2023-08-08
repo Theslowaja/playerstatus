@@ -1,6 +1,6 @@
 <?php
 
-namespace Theslowaja\PlayerStatus;
+namespace Theslwaja\PlayerStatus;
 
 use pocketmine\event\Listener;
 use Ifera\ScoreHud\event\TagsResolveEvent;
@@ -11,8 +11,8 @@ class ScorehudEvent implements Listener {
 	    $player = $event->getPlayer();
 	    $tag = $event->getTag();
 
-      $os = ["Unknown", "Android", "iOS", "macOS", "FireOS", "GearVR", "HoloLens", "Windows 10", "Windows", "Dedicated", "Orbis", "Playstation 4", "Nintento Switch", "Xbox One"];
-      $controls = ["Unknown", "Mouse & Keyboard", "Touch", "Controller"];
+          $os = ["Unknown", "Android", "iOS", "macOS", "FireOS", "GearVR", "HoloLens", "Windows 10", "Windows", "Dedicated", "Orbis", "Playstation 4", "Nintento Switch", "Xbox One"];
+          $controls = ["Unknown", "Mouse & Keyboard", "Touch", "Controller"];
 
 	    switch($tag->getName()){
 		    case "playerstatus.device":
