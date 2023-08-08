@@ -13,10 +13,7 @@ class Main extends PluginBase {
 
     public function onEnable(): void {
 	if($this->getServer()->getPluginManager()->getPlugin("ScoreHud") != null){
-           $this->getLogger()->info("ScoreHud Registerd!");
            $this->getServer()->getPluginManager()->registerEvents(new ScorehudEvent(), $this);
-	} else {
-	    $this->getLogger()->info("ScoreHud Not Found!");
 	}
     }
     
