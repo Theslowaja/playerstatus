@@ -9,13 +9,12 @@ use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
 use pocketmine\Server;
 use pocketmine\utils\TextFormat;
-use Ifera\ScoreHud\event\TagsResolveEvent;
 
 class Main extends PluginBase implements Listener{
 
     public function onEnable(): void {
 	if($this->getServer()->getPluginManager()->getPlugin("ScoreHud") != null){
-           $this->getServer()->getPluginManager()->registerEvents(new ScoreHudEvent(), $this);
+           $this->getServer()->getPluginManager()->registerEvents(new ScorehudEvent(), $this);
 	}
     }
     
