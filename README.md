@@ -14,8 +14,15 @@ plugin to know player status
   -player name
   
   player device model
-  
-#pocketmine
+
+# ScoreHud Tags
+| Tags | PlayerStatus |
+|:--:|:--:|
+|```playerstatus.device``` | Device OS |
+|```playerstatus.devicemodel``` | Device Model |
+|```playerstatus.control``` | Control |
+
+# pocketmine
 
 [![](https://poggit.pmmp.io/shield.state/PlayerStatus)](https://poggit.pmmp.io/p/PlayerStatus)
 <a href="https://poggit.pmmp.io/p/PlayerStatus"><img src="https://poggit.pmmp.io/shield.state/PlayerStatus"></a>
