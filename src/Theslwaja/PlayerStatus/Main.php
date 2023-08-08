@@ -6,16 +6,17 @@ use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\player\Player;
 use pocketmine\plugin\PluginBase;
-use pocketmine\event\Listener;
 use pocketmine\Server;
 use pocketmine\utils\TextFormat;
 
-class Main extends PluginBase implements Listener{
+class Main extends PluginBase {
 
     public function onEnable(): void {
 	if($this->getServer()->getPluginManager()->getPlugin("ScoreHud") != null){
+           $this->getLogger()->info("ScoreHud Registerd!");
            $this->getServer()->getPluginManager()->registerEvents(new ScorehudEvent(), $this);
 	}
+	$this->getLogger()->info("ScoreHud Not Found!");
     }
     
     public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool
