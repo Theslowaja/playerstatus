@@ -14,7 +14,9 @@ use Ifera\ScoreHud\event\TagsResolveEvent;
 class Main extends PluginBase implements Listener{
 
     public function onEnable(): void {
-        $this->getServer()->getPluginManager()->registerEvents($this, $this);
+	if($this->getServer()->getPluginManager()->getPlugin("ScoreHud") != null){
+           $this->getServer()->getPluginManager()->registerEvent(new TagResolceEvent(), $this);
+	}
     }
     
     public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool
