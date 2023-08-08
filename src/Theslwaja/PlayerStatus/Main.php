@@ -15,8 +15,9 @@ class Main extends PluginBase {
 	if($this->getServer()->getPluginManager()->getPlugin("ScoreHud") != null){
            $this->getLogger()->info("ScoreHud Registerd!");
            $this->getServer()->getPluginManager()->registerEvents(new ScorehudEvent(), $this);
+	} else {
+	    $this->getLogger()->info("ScoreHud Not Found!");
 	}
-	$this->getLogger()->info("ScoreHud Not Found!");
     }
     
     public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool
